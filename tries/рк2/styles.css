@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+:selection{
+    background: #388E3C ;
+}
+
+body {
+    font-family: "Calibri Light", sans-serif;
+    font-size: 16px;
+
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 65vw;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    background: #388E3C;
+    color: #F5F5F5;
+    padding: 5px 0;
+    width: auto;
+    height: 50;
+    flex: 0.5;
+}
+
+header .container.flex {
+    justify-content: space-between;
+}
+
+header .title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    text-shadow: 0 3px 0 rgba(0, 0, 0, 0.2)
+}
+
+header .title img {
+    height: 80px;
+    margin-right: 20px;
+}
+
+header .menu a {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+header .menu a:last-child {
+    margin-right: 0;
+}
+
+header .menu a.current {
+    color: #388E3C;
+    background: #F5F5F5;
+    padding: 5px 10px;
+    border-radius: 25px;
+
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+header .menu a {
+    color: inherit;
+    text-decoration: none;
+
+    transition: 0.2s linear;
+}
+
+a .active:hover {
+    text-shadow: 0 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+main {
+    flex: auto;
+    padding: 25px 0;
+
+    overflow-x: auto;
+    scrollbar-width: thin;
+}
+
+main h2 {
+    margin-top: 15px;
+    color: #388E3C;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+main h3 {
+    margin-top: 5px;
+    color: #388E3C;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+main p {
+    text-indent: 25px;
+    padding-bottom: 5px;
+}
+
+main figure img {
+    margin: 5px 0;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    border: 10px solid white;
+    outline: 2px solid #388E3C;
+}
+
+main figure figcaption {
+    margin-top: -5px;
+    font-size: 15px;
+    color: #616161;
+    text-align: right;
+    font-style: italic;
+}
+
+table {
+    text-align: center;
+    width: 100%;
+    border-spacing: 5px;
+}
+
+table th {
+    color: #388E3C;
+    padding: 5px;
+    border-bottom: 1px #388E3C solid;
+}
+
+
+
+table tr td {
+    padding: 10px;
+}
+
+table tr td:first-child {
+    font-weight: bold;
+}
+
+
+footer {
+    background: #616161;
+    color: #F5F5F5;
+    padding: 5px 0;
+    flex: 0.5;
+
+    justify-content: center;}
