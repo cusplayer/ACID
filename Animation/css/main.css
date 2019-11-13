@@ -14,13 +14,12 @@ body {
     height: 1000px;
     position: relative;
     overflow: hidden;
-    animation: sky_background 50s ease-out infinite;
-    animation: sky_background 50s ease-out infinite;
-    animation: sky_background 50s ease-out infinite;
     transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0)
-} 
+    animation-name: sky_background;
+    animation-duration: 50s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
 
 
 
@@ -227,9 +226,7 @@ grid-area: fish;
   0% {
     left: 0;
     top: 35px; 
-  }
-    
-    
+  } 
   100% { 
       display: none;
     left: 100%; 
